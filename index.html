@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPH Architects - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Merriweather);
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'Merriweather', sans-serif;
+        }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+}
+nav .visible {
+    display: flex;
+}       
+.menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-height: 120px;
+    list-style-type: none;
+    /* bottom: 0; */
+    /*  */
+    /* display: flex; */
+    display: none;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+.visible li{
+    display:block;
+    text-align: center;
+    border: 1px solid burlywood;
+    background-color: darkslategray;
+}
+
+@media (min-width: 600px) {
+
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="top_nav" class="mainNav">
+            <!-- Vises på alle er gemt ved mobil -->
+            <h1>CPH Architects</h1>
+            <ul class="menu">
+            <li><a href="#artikler">Artikler</a></li>
+            <li><a href="#galleri">Galleri</a></li>
+            </ul>
+            <a href="#" id="ikonx" class="ikon"><i class="fa fa-bars"></i></a>
+           </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
