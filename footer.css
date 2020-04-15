@@ -1,0 +1,27 @@
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "adress social"
+    "copyright copyright";
+    row-gap: 2em;
+    background-color: grey;
+    color:whitesmoke;
+    height: auto;
+}
+.adress{
+    padding: 1.5em;
+    grid-area: adress;
+    place-self: center;
+}
+.social{
+    grid-area: social;
+    padding: 1.5em;
+    place-self: center;
+    font-size: 1.5em;
+}
+.copyright{
+    grid-area: copyright;
+    text-align: center;
+}

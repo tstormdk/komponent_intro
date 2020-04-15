@@ -3,7 +3,7 @@ const whopper = document.getElementById("ikonx");
 // const span = document.querySelectorAll(".burger-box span");
 
 whopper.addEventListener("click", menuRollOut);
-window.addEventListener('resize', RemoveClass);
+// window.addEventListener('resize', RemoveClass);
 
 function menuRollOut() {
     const navBox = document.querySelector(".menu");
@@ -13,7 +13,7 @@ function menuRollOut() {
 function RemoveClass(){
     const navBox = document.querySelector(".menu");
     let sizeStuf = window.innerWidth;
-    if (sizeStuf < 500 && sizeStuf > 498) {
+    if (sizeStuf < 500 && sizeStuf > 490) {
         // console.log("sizeStuf");
         navBox.classList.remove("menu");
     }

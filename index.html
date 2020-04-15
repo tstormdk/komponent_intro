@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPH Architects - Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav_mobile.css">
+    <link rel="stylesheet" href="footer.css">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Merriweather);
         *{
@@ -12,41 +13,9 @@
             padding: 0;
             font-family: 'Merriweather', sans-serif;
         }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em;
-}
-nav .visible {
-    display: flex;
-}       
-.menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    min-height: 120px;
-    list-style-type: none;
-    /* bottom: 0; */
-    /*  */
-    /* display: flex; */
-    display: none;
-    /* justify-content: space-around; */
-    flex-direction: column;
-}
-.visible li{
-    display:block;
-    text-align: center;
-    border: 1px solid burlywood;
-    background-color: darkslategray;
-}
-
-@media (min-width: 600px) {
-
-
-}
+        main{
+            min-height: calc(100vh - 70px);
+        }
     </style>
 </head>
 <body>
@@ -58,16 +27,43 @@ nav .visible {
             <li><a href="#artikler">Artikler</a></li>
             <li><a href="#galleri">Galleri</a></li>
             </ul>
-            <a href="#" id="ikonx" class="ikon"><i class="fa fa-bars"></i></a>
+            <a href="#" id="ikonx" class="ikon"><i class="fas fa-bars"></i></a>
            </nav>
     </header>
     <main>
 
     </main>
     <footer>
-
+        <section id="adress" class="adress">
+            <table>                
+                <tr>
+                    <td>CPH Architects</td>
+                </tr>
+                <tr>
+                    <td>Piet Hein&apos;s Gade 42</td>
+                </tr>
+                <tr>
+                    <td>DK-2820 Søborg</td>
+                </tr>
+                <tr>
+                    <td>+45 12 34 56 78</td>
+                </tr>
+                <tr>
+                    <td>hello@cpharchitect.dk</td>
+                </tr>
+            </table>
+        </section>
+        <section id="social" class="social">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </section>
+        <section id="copyright" class="copyright">
+            <p>Ophavsret &#169; 2018, alle rettigheder forbeholdes</p>
+        </section>
 
     </footer>
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/5d1d86b16f.js" crossorigin="anonymous"></script>
 </body>
 </html>
