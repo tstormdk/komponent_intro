@@ -11,8 +11,8 @@ footer{
     height: auto;
 }
 .adress{
-    padding: 1.5em;
     grid-area: adress;
+    padding: 1.5em;
     place-self: center;
 }
 .social{
